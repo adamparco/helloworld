@@ -13,4 +13,6 @@ COPY --from=builder /install /usr/local
 COPY src /app
 
 WORKDIR /app
-CMD ["python", "hello.py"]
+
+ENTRYPOINT [ "python" ]
+CMD [ "hello.py" ]
